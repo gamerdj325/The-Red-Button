@@ -22,8 +22,6 @@ public class GameManager : MonoBehaviour
    _clickCount += _clickMultiplier;
 
    UpdateText();
-
-   print(_clickCount);
 }
 
 private void UpdateText()
