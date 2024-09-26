@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ShopClickAnim : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] private AudioSource _sfxPlayer;
+
     [SerializeField] private Animator _animator;
 
     private const string CLICK_TRIGGER = "Click";
@@ -13,8 +13,7 @@ public class ShopClickAnim : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
 
-  _sfxPlayer.Play();
   _animator.SetTrigger(CLICK_TRIGGER);
-  
+
     }
 }
